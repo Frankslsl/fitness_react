@@ -41,24 +41,28 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
                     page={SelectedPage.home}
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                   <Link
                     href="#benefits"
                     page={SelectedPage.benefits}
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                   <Link
                     href="#ourClasses"
                     page={SelectedPage.ourClasses}
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                   <Link
                     href="#contactUs"
                     page={SelectedPage.contactUs}
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    setIsMenuToggled={setIsMenuToggled}
                   />
                 </div>
                 <div className={`${flexBetween} gap-6 pl-4`}>

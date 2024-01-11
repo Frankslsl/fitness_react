@@ -27,12 +27,6 @@ type FormData = {
   message: string;
 };
 
-type FormErrors = {
-  [key in keyof FormData]?: {
-    message: string;
-  };
-};
-
 const ContactUs = ({ setSelectedPage }: Props) => {
   const {
     register,
