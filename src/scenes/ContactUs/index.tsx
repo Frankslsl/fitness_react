@@ -46,7 +46,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
       });
       console.log(res);
     } catch (e) {
-      toast.error(e.message, { ...toastConfig, position: "bottom-right" });
+      if (e instanceof Error) {
+        toast.error(e.message, { ...toastConfig, position: "bottom-right" });
+      }
     }
   };
 
