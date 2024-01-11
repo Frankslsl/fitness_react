@@ -45,7 +45,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         position: "bottom-right",
       });
       console.log(res);
-    } catch (e: any) {
+    } catch (e) {
       toast.error(e.message, { ...toastConfig, position: "bottom-right" });
     }
   };
